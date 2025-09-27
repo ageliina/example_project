@@ -1,0 +1,6 @@
+_build
+__pychache__
+
+*.pyc
+*.swp
+*~
