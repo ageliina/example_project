@@ -10,7 +10,8 @@ import numpy as np
 
 
 class ExampleClass:
-    """An example class with name and age.
+    """
+    An example class with name and age.
 
     The example class has a name and an age. It knows how to print each
     property. Nothing more, nothing less.
@@ -29,6 +30,7 @@ class ExampleClass:
     >>> my_example_class = ExampleClass("foo", 42)
     >>> my_example_class.show()
     foo 42
+
     """
 
     def __init__(self, name: str, age: int):
@@ -43,7 +45,10 @@ class ExampleClass:
 
 
 def sum_two(a: int, b: int) -> int:
-    """Sum two items.
+    """
+    Sum two items.
+
+    Sums two items together and returns the sum of the two.
 
     Parameters
     ----------
@@ -74,5 +79,6 @@ def sum_two(a: int, b: int) -> int:
     Traceback (most recent call last):
         ...
     TypeError: can only concatenate str (not "int") to str
+
     """
     return a + b
