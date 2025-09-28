@@ -4,7 +4,11 @@
 # Email: akke.viitanen@helsinki.fi
 # Date: 2025-09-27 13:20:40
 
-"""Some python examples."""
+"""
+Some python examples.
+
+This line added just to launch a pre-commit hook.
+"""
 
 import numpy as np
 

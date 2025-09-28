@@ -32,3 +32,14 @@ repos:
         language: system
         files: '\.(py|rst)$'
         pass_filenames: false
+    -   id: pytest-check
+        name: Run pytest
+        entry: pytest
+        language: system
+        files: \.py$
+        args:
+          - --doctest-modules
+          - -s
+          - -vv
+        pass_filenames: false
+        always_run: true

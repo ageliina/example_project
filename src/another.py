@@ -20,8 +20,8 @@ class AnotherExampleClass:
 
     Examples
     --------
-    >>> my_example_class = AnotherExampleClass("foo")
-    >>> my_example_class.show()
+    >>> another_example_class = AnotherExampleClass("foo")
+    >>> another_example_class.show()
     foo
 
     """
