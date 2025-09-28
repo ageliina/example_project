@@ -26,12 +26,15 @@ repos:
 # sphinx
 -   repo: local
     hooks:
+
     -   id: docs-build
         name: Build Sphinx docs
         entry: bash -c "cd docs && make html"
         language: system
         files: '\.(py|rst)$'
         pass_filenames: false
+        verbose: true
+
     -   id: pytest-check
         name: Run pytest
         entry: pytest
