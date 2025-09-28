@@ -11,4 +11,5 @@ example project documentation
    :caption: Contents:
 
    code_api
-   notebooks
+   notebooks/example_notebook_one.ipynb
+   notebooks/example_notebook_two.ipynb
