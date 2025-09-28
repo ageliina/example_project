@@ -1,6 +1,0 @@
-ipykernel
-nbsphinx
-numpy
-pandoc
-pre-commit
-sphinx_rtd_theme
