@@ -22,13 +22,17 @@ The following features are included:
 
 # Developing
 
+## Clone the repository
+
+  git clone 'git@github.com:ageliina/example_project.git' example_project
+
 ## Create a virtual environment
 
-  python -m venv my_virtual_environment
+  python -m venv example_project && cd example_project
 
 ## Activate the virtual environment
 
-  cd my_virtual_environment && . bin/activate
+  . bin/activate
 
 ## Install the environment
 
