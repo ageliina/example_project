@@ -18,7 +18,7 @@ class TestTable(unittest.TestCase):
         self.assertEqual(my_table["c"][2], 9)
 
     def test_write_test_latex_table(self):
-        expected = "".join(open("data/tests/test_table.tex.frozen"))
+        expected = "".join(open("data/tests/table/test_table.tex.frozen"))
         table.write_test_latex_table()
-        got = "".join(open("data/tests/test_table.tex"))
+        got = "".join(open("data/tests/table/test_table.tex"))
         self.assertEqual(expected, got)
