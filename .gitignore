@@ -4,3 +4,5 @@ __pychache__
 *.pyc
 *.swp
 *~
+
+.ipynb_checkpoints
