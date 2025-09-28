@@ -7,7 +7,7 @@ import os
 import sys
 
 conf_dir = os.path.abspath(os.path.dirname(__file__))
-sys.path.insert(0, os.path.join(conf_dir, "..", "src"))
+sys.path.insert(0, os.path.join(conf_dir, "..", "src", "python"))
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -20,7 +20,7 @@ release = "0.0.1"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["sphinx.ext.autodoc", "sphinx_rtd_theme"]
+extensions = ["sphinx.ext.autodoc", "sphinx_rtd_theme", "nbsphinx"]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]

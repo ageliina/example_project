@@ -11,3 +11,4 @@ example project documentation
    :caption: Contents:
 
    code_api
+   notebooks
