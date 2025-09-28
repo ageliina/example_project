@@ -11,3 +11,6 @@ Example project
 
 .. automodule:: sum_two
    :members:
+
+.. automodule:: greeting
+   :members:

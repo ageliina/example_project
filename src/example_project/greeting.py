@@ -28,7 +28,7 @@ def greeting(time: str) -> str:
     ValueError
         If time does not conform to the "hh:mm" format.
     ValueError
-        If not hours in [0, 24] and not minutes in [0, 60]
+        If not hours in [0, 24] or not minutes in [0, 60].
 
     Examples
     --------
