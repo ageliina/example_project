@@ -10,12 +10,18 @@ from astropy.table import Table
 import astropy.units as u
 
 
-def write_test_latex_table() -> None:
-    """Write a test LaTeX table."""
+def read_test_table():
+    """Read the test table and assigns units."""
     table = Table.read("data/tests/test_table.txt", format="ascii")
     table["a"] *= u.m
     table["b"] *= u.s
     table["c"] *= u.m / u.s
+    return table
+
+
+def write_test_latex_table() -> None:
+    """Write a test LaTeX table."""
+    table = read_test_table()
     table.write(
         "data/tests/test_table.tex",
         format="latex",

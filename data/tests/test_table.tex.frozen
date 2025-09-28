@@ -1,0 +1,16 @@
+\begin{table*}[htbp]
+% preamble
+\caption{Example table with units.}
+\begin{tabular}{rrr}
+\hline\hline
+a & b & c \\
+$\mathrm{m}$ & $\mathrm{s}$ & $\mathrm{m\,s^{-1}}$ \\
+\hline
+% data_start
+1.0 & 2.0 & 3.0 \\
+4.0 & 5.0 & 6.0 \\
+7.0 & 8.0 & 9.0 \\
+% data_end
+\end{tabular}
+\tablefoot{This is a table footer for extra information.}
+\end{table*}
