@@ -14,11 +14,21 @@ class TestExampleClass(unittest.TestCase):
     def setUp(self):
         self.example_class = ExampleClass("foo", 42)
 
+    def test_init(self):
+        self.assertEqual(self.example_class.name, "foo")
+        self.assertEqual(self.example_class.age, 42)
+        self.assertGreaterEqual(self.example_class.seed, 0.0)
+        self.assertLess(self.example_class.seed, 1.0)
+
     def test_name(self):
         self.assertEqual(self.example_class.name, "foo")
 
     def test_age(self):
         self.assertEqual(self.example_class.age, 42)
+
+    def test_seed(self):
+        self.assertGreaterEqual(self.example_class.seed, 0.0)
+        self.assertLess(self.example_class.seed, 1.0)
 
     def test_show(self):
         self.assertTrue(self.example_class.show() is None)

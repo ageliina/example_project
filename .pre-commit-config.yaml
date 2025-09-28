@@ -23,10 +23,10 @@ repos:
     -   id: pydocstyle
         args: ["--ignore=D100,D104,D203,D212"]
 
-# sphinx
 -   repo: local
     hooks:
 
+    # sphinx
     -   id: docs-build
         name: Build Sphinx docs
         entry: bash -c "cd docs && make html"
@@ -35,6 +35,7 @@ repos:
         pass_filenames: false
         verbose: true
 
+    # pytest
     -   id: pytest-check
         name: Run pytest
         entry: pytest
@@ -50,8 +51,19 @@ repos:
         always_run: true
         verbose: true
 
+    # coverage
+    -   id: python-coverage
+        name: Run coverage
+        entry: pytest --cov=src tests
+        language: system
+        files: \.py$
+        pass_filenames: false
+        always_run: true
+        verbose: true
+
+    # build
     -   id: python-build
-        name: Build python
+        name: Run build
         entry: python -m build
         language: system
         files: \.py$

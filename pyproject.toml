@@ -7,6 +7,7 @@ authors = [
 dependencies = [
     "astropy",
     "build",
+    "coverage",
     "ipykernel",
     "nbsphinx",
     "matplotlib",
@@ -16,6 +17,7 @@ dependencies = [
     "sphinx_rtd_theme",
     "pandoc",
     "pytest",
+    "pytest-cov",
 ]
 version = "0.1.0"
 
@@ -25,3 +27,12 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/example_project"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["tests"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true

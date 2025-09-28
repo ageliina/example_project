@@ -2,6 +2,7 @@
 dist
 _build
 __pychache__
+.coverage
 
 # python
 *.pyc
