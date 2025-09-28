@@ -7,7 +7,7 @@
 """Unit test the example class."""
 
 import unittest
-from example import ExampleClass
+from example_project.example import ExampleClass
 
 
 class TestExampleClass(unittest.TestCase):

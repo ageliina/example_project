@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.join(conf_dir, "..", "notebooks"))
 project = "example project"
 copyright = "2025, aetv"
 author = "aetv"
-release = "0.0.1"
+release = "0.1.0"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

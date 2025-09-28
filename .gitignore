@@ -1,9 +1,17 @@
+# build
 dist
 _build
 __pychache__
 
+# python
 *.pyc
 *.swp
 *~
-
 .ipynb_checkpoints
+
+# venv
+bin
+lib
+lib64
+pyvenv.cfg
+share

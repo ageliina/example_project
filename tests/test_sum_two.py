@@ -7,7 +7,7 @@
 """Unit test the example class."""
 
 import unittest
-import sum_two
+from example_project import sum_two
 
 
 class TestSumTwo(unittest.TestCase):
