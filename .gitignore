@@ -17,3 +17,6 @@ lib
 lib64
 pyvenv.cfg
 share
+
+# test data
+data/tests/test_table.tex

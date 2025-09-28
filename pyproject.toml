@@ -5,6 +5,7 @@ authors = [
     { name = "aetv", email = "akke.viitanen@iki.fi" }
 ]
 dependencies = [
+    "astropy",
     "build",
     "ipykernel",
     "nbsphinx",
