@@ -46,3 +46,11 @@ class ExampleClass:
     def show(self) -> None:
         """Print name and age."""
         print(self.name, self.age)
+
+    def add_name(self, another) -> str:
+        """Add two names together."""
+        return self.name + another.name
+
+    def add_age(self, another) -> int:
+        """Add two ages together."""
+        return self.age + another.age
