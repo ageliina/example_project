@@ -47,3 +47,11 @@ repos:
         pass_filenames: false
         always_run: true
         verbose: true
+
+    -   id: python-build
+        name: Build python
+        entry: python -m build
+        language: system
+        files: \.py$
+        always_run: true
+        verbose: true
