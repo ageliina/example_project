@@ -11,17 +11,21 @@ from example_project import sum_two
 
 
 class TestSumTwo(unittest.TestCase):
-    def test_numbers(self):
+    def test_sum_two(self):
         self.assertEqual(sum_two.sum_two(0, 0), 0)
         self.assertEqual(sum_two.sum_two(0, 1), 1)
         self.assertEqual(sum_two.sum_two(1, 1), 2)
         self.assertEqual(sum_two.sum_two(1, 4), 5)
         self.assertEqual(sum_two.sum_two(5, 6), 11)
-
-    def test_errors(self):
         self.assertRaises(TypeError, sum_two.sum_two, 1, "foo")
         self.assertRaises(TypeError, sum_two.sum_two, 1, None)
         self.assertRaises(TypeError, sum_two.sum_two, 1, {})
         self.assertRaises(TypeError, sum_two.sum_two, 1, [])
         self.assertRaises(TypeError, sum_two.sum_two, 1, 2, 3)
         self.assertRaises(TypeError, sum_two.sum_two, 1, 2, 3, 4)
+
+    def test_sum_two_with_branches(self):
+        self.assertEqual(sum_two.sum_two_with_branches(2, 1), 3)
+        self.assertEqual(sum_two.sum_two_with_branches(3, 5), -2)
+        self.assertEqual(sum_two.sum_two_with_branches(5, 5), 1)
+        self.assertRaises(TypeError, sum_two.sum_two_with_branches, 0, None)
