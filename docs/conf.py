@@ -9,7 +9,7 @@ import os
 import sys
 
 conf_dir = os.path.abspath(os.path.dirname(__file__))
-sys.path.insert(0, os.path.join(conf_dir, "..", "src", "python"))
+sys.path.insert(0, os.path.join(conf_dir, "..", "src", "example_project"))
 sys.path.insert(0, os.path.join(conf_dir, "..", "notebooks"))
 
 # -- Project information -----------------------------------------------------
