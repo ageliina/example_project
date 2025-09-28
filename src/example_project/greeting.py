@@ -21,11 +21,11 @@ def greeting(time: str) -> str:
     Returns
     -------
     str
-        A relevant greeting based on the hours.
+        A relevant greeting.
 
     Raises
     ------
-    AssertionError
+    ValueError
         If time does not conform to the "hh:mm" format.
     ValueError
         If not hours in [0, 24] and not minutes in [0, 60]
@@ -38,7 +38,7 @@ def greeting(time: str) -> str:
     'Good morning!'
     >>> greeting('12:34')
     'Good day!'
-    >>> greeting('20:20')
+    >>> greeting('23:20')
     'Good evening!'
     >>> greeting('foobarbaz')
     Traceback (most recent call last):
@@ -50,21 +50,15 @@ def greeting(time: str) -> str:
     ValueError: Hours must be 0-24 and minutes must be 0-60.
 
     """
-    # Validate the input argument
+    # Validate string input
     if not re.findall("[0-9][0-9]:[0-9][0-9]", time):
         raise ValueError("Malformed input argument.")
+
+    # Validate hours and minutes
     hours, minutes = map(int, time.split(":"))
     if not (hours in range(24) and minutes in range(60)):
         raise ValueError("Hours must be 0-24 and minutes must be 0-60.")
 
-    # Find the greeting
-    if hours < 6:
-        ret = "Good night!"
-    elif hours < 12:
-        ret = "Good morning!"
-    elif hours < 18:
-        ret = "Good day!"
-    elif hours < 24:
-        ret = "Good evening!"
-
-    return ret
+    # Return the appropriate greeting
+    time_of_day = ["night", "morning", "day", "evening"][hours // 6]
+    return f"Good {time_of_day}!"
