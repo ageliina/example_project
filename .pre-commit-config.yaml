@@ -53,5 +53,6 @@ repos:
         entry: python -m build
         language: system
         files: \.py$
+        pass_filenames: false
         always_run: true
         verbose: true
