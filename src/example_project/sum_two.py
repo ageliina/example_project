@@ -56,14 +56,32 @@ def sum_two_with_branches(a: int, b: int) -> int:
     """
     Sum two numbers with branches.
 
-    Test branching by adding some if clauses to the function.
+    Returns the product of the two values. The product is defined as a
+    piecewise function depending on the relative magnitude of 'a' and 'b'. It
+    is defined as the sum a + b (if a > b), the difference 'a - b' (if a < b),
+    and the ratio 'a // b' otherwise.
+
+    Parameters
+    ----------
+    a: int
+        First argument to sum.
+    b: int
+        Second argument to sum.
+
+    Returns
+    -------
+    c: int
+        Product of the two values (see above).
 
     Examples
     --------
+    >>> # Return the sum of the two arguments
     >>> sum_two_with_branches(2, 1)
     3
+    >>> # Return the difference of the two arguments
     >>> sum_two_with_branches(3, 5)
     -2
+    >>> # Return the ratio of the two arguments
     >>> sum_two_with_branches(5, 5)
     1
     >>> sum_two_with_branches(0, None)
