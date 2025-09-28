@@ -21,3 +21,6 @@ share
 
 # test data
 data/tests/test_table.tex
+
+# git
+*.orig
