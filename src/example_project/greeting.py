@@ -21,7 +21,7 @@ def greeting(time: str) -> str:
     Returns
     -------
     str
-        A relevant greeting based on the hours.
+        A relevant greeting.
 
     Raises
     ------
@@ -38,7 +38,7 @@ def greeting(time: str) -> str:
     'Good morning!'
     >>> greeting('12:34')
     'Good day!'
-    >>> greeting('20:20')
+    >>> greeting('23:20')
     'Good evening!'
     >>> greeting('foobarbaz')
     Traceback (most recent call last):
@@ -57,14 +57,5 @@ def greeting(time: str) -> str:
     if not (hours in range(24) and minutes in range(60)):
         raise ValueError("Hours must be 0-24 and minutes must be 0-60.")
 
-    # Find the greeting
-    if hours < 6:
-        ret = "Good night!"
-    elif hours < 12:
-        ret = "Good morning!"
-    elif hours < 18:
-        ret = "Good day!"
-    elif hours < 24:
-        ret = "Good evening!"
-
-    return ret
+    # Find the appropriate greeting
+    return ["Good night!", "Good morning!", "Good day!", "Good evening!"][hours // 6]
