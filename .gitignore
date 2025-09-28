@@ -5,9 +5,11 @@ __pychache__
 
 # python
 *.pyc
+.ipynb_checkpoints
+
+# vim
 *.swp
 *~
-.ipynb_checkpoints
 
 # venv
 bin
