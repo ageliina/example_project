@@ -7,18 +7,19 @@ functionality, automatic testing, packaging, etc...
 
 The following features are included:
 
-- pre-commit hooks https://pre-commit.com/
-- linting
+- [x] pre-commit hooks https://pre-commit.com/
+- [x] linting
   - ruff: https://github.com/astral-sh/ruff
   - pydocstyle: https://www.pydocstyle.org/en/stable/
-- testing
+- [x] testing
   - pytest: https://docs.pytest.org/en/stable/
   - doctest: https://docs.python.org/3/library/doctest.html
-- documentation with sphinx: https://www.sphinx-doc.org/en/master/
-- python packaging
+- [x] documentation with sphinx: https://www.sphinx-doc.org/en/master/
+- [x] python packaging
   - build: https://packaging.python.org/en/latest/tutorials/packaging-projects/
   - hatch: https://hatch.pypa.io/latest/
-- example jupyter notebooks
+- [x] example jupyter notebooks
+- [ ] benchmarking
 
 # Developing
 
